@@ -1,5 +1,5 @@
 #CodeIgniter Base Controllers
-CodeIgniter base controller classes for a better code structure and DRYer controller classes.  
+CodeIgniter base controller classes for a better code structure and DRYer controller classes.
 
 It takes advantage of PHP 5's autoloading capabilities to include a class file when that class is referenced, allowing CI libraries to extend classes that have not yet been loaded.
 
@@ -11,18 +11,7 @@ It takes advantage of PHP 5's autoloading capabilities to include a class file w
 ##Usage
 * Move application common logic of controllers to `application/core/Public_Controller.php` or `application/core/Admin_Controller.php` files or make your own, e.g. `Accounts_Controller`.
 * Alter application controller classes to extend either `Public_Controller` or `Admin_Controller` (or the one you make) instead of `CI_Controller` class.
-```php
-class Blog extends Public_Controller {  
-  function __construct()  
-  {  
-      parent::__construct();  
-      // Whatever  
-      $this->data['stuff'] = $whatever;  
-  }  
-}  
-```
 
 ##References and read more
-[CodeIgniter Base Classes Revisited](http://www.highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited)  
-[CodeIgniter Base Classes: Keeping it DRY](http://philsturgeon.co.uk/news/2010/02/CodeIgniter-Base-Classes-Keeping-it-DRY)  
-  
+[CodeIgniter Base Classes Revisited](http://www.highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited)
+[CodeIgniter Base Classes: Keeping it DRY](http://philsturgeon.co.uk/news/2010/02/CodeIgniter-Base-Classes-Keeping-it-DRY)
