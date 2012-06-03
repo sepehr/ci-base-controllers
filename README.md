@@ -6,22 +6,23 @@ It takes advantage of PHP 5's autoloading capabilities to include a class file w
 ##Installation
 * Move each file to its corresponding directory.
 * Enable hooks in `application/config/config.php` file: `$config['enable_hooks'] = TRUE;`
-* **Merge** repository's `hooks.php` config file with your own at `application/config/hooks.php` to avoind loosing your current hooks.
+* **Merge** repository's `hooks.php` config file with your own at `application/config/hooks.php` to avoid loosing your current hooks.
 
 ##Usage
-* Move application common logic of controllers in `application/core/Public_Controller.php` or `application/core/Admin_Controller.php` files or make your own, e.g. `Accounts_Controller`.
-* Make your application controller classes to extend either `Public_Controller` or `Admin_Controller` (or the one you make) instead of `CI_Controller` class.
+* Move application common logic of controllers to `application/core/Public_Controller.php` or `application/core/Admin_Controller.php` files or make your own, e.g. `Accounts_Controller`.
+* Alter application controller classes to extend either `Public_Controller` or `Admin_Controller` (or the one you make) instead of `CI_Controller` class.
 ```
-    class Blog extends Public_Controller {
-      function __construct()
-      {
-          parent::__construct();
-          // Whatever
-          $this->data['stuff'] = $whatever;
-      }
-    }
+    class Blog extends Public_Controller {  
+      function __construct()  
+      {  
+          parent::__construct();  
+          // Whatever  
+          $this->data['stuff'] = $whatever;  
+      }  
+    }  
 ```
 
 ##References and read more
-[CodeIgniter Base Classes: Keeping it DRY](http://philsturgeon.co.uk/news/2010/02/CodeIgniter-Base-Classes-Keeping-it-DRY)  
 [CodeIgniter Base Classes Revisited](http://www.highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited)  
+[CodeIgniter Base Classes: Keeping it DRY](http://philsturgeon.co.uk/news/2010/02/CodeIgniter-Base-Classes-Keeping-it-DRY)  
+  
