@@ -43,6 +43,8 @@
  * Application Base Controller
  *
  * The common shared code for all application controllers should be placed here.
+ * NOTE: If you're using Modular Extensions and you want the HMVC feature in place,
+ * you need to alter this to extend MX_Controller instead of CI_Controller.
  *
  * @package 	CodeIgniter
  * @category	Controllers
