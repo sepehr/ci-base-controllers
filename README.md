@@ -13,5 +13,5 @@ It takes advantage of PHP 5's autoloading capabilities to include a class file w
 * Alter application controller classes to extend either `Public_Controller` or `Admin_Controller` (or the one you make) instead of `CI_Controller` class.
 
 ##References and read more
-[CodeIgniter Base Classes Revisited](http://www.highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited)
+[CodeIgniter Base Classes Revisited](http://www.highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited)  
 [CodeIgniter Base Classes: Keeping it DRY](http://philsturgeon.co.uk/news/2010/02/CodeIgniter-Base-Classes-Keeping-it-DRY)
