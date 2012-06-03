@@ -11,15 +11,15 @@ It takes advantage of PHP 5's autoloading capabilities to include a class file w
 ##Usage
 * Move application common logic of controllers to `application/core/Public_Controller.php` or `application/core/Admin_Controller.php` files or make your own, e.g. `Accounts_Controller`.
 * Alter application controller classes to extend either `Public_Controller` or `Admin_Controller` (or the one you make) instead of `CI_Controller` class.
-```
-    class Blog extends Public_Controller {  
-      function __construct()  
-      {  
-          parent::__construct();  
-          // Whatever  
-          $this->data['stuff'] = $whatever;  
-      }  
-    }  
+```php
+class Blog extends Public_Controller {  
+  function __construct()  
+  {  
+      parent::__construct();  
+      // Whatever  
+      $this->data['stuff'] = $whatever;  
+  }  
+}  
 ```
 
 ##References and read more
