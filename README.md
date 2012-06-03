@@ -7,6 +7,7 @@ It takes advantage of PHP 5's autoloading capabilities to include a class file w
 * Move each file to its corresponding directory.
 * Enable hooks in `application/config/config.php` file: `$config['enable_hooks'] = TRUE;`
 * **Merge** repository's `hooks.php` config file with your own at `application/config/hooks.php` to avoid loosing your current hooks.
+* If using **Modular Extensions** and you want the HMVC feature in place, Alter `MY_Model` to extend `MX_Controller` instead of `CI_Controller` class.
 
 ##Usage
 * Move application common logic of controllers to `application/core/Public_Controller.php` or `application/core/Admin_Controller.php` files or make your own, e.g. `Accounts_Controller`.
