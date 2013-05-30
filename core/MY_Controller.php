@@ -52,7 +52,7 @@
  * @link		https://github.com/sepehr/ci-base-controllers
  * @see			http://highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited
  */
-abstract class MY_Controller extends CI_Controller {
+abstract class Base_Controller extends CI_Controller {
 
 	/**
 	 * Application base controller constructor.
@@ -62,7 +62,7 @@ abstract class MY_Controller extends CI_Controller {
 		parent::__construct();
 	}
 }
-// End of MY_Controller class
+// End of Base_Controller class
 
 /* End of file MY_Controller.php */
 /* Location: ./application/core/MY_Controller.php */
