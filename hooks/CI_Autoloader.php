@@ -15,15 +15,15 @@
  * - application/core/MY_Controller.php
  * - application/core/Public_Controller.php (a base controller - optional)
  * - application/core/Admin_Controller.php  (a base controller - optional)
- * - application/hooks/MY_Autoloader.php
+ * - application/hooks/CI_Autoloader.php
  *
  * 2. Hooks must be enabled in application config.php file.
  *
  * 3. A pre_system hook must already be registered in application hooks.php config file:
  * $hook['pre_system'] = array(
- *     'class'    => 'MY_Autoloader',
+ *     'class'    => 'CI_Autoloader',
  *	   'function' => 'register',
- *	   'filename' => 'MY_Autoloader.php',
+ *	   'filename' => 'CI_Autoloader.php',
  *	   'filepath' => 'hooks',
  *	   'params'   => array(APPPATH . 'base/')
  * );
@@ -40,7 +40,7 @@
 // ------------------------------------------------------------------------
 
 /**
- * MY_Autoloader Hook Class
+ * CI_Autoloader Hook Class
  *
  * @package		CodeIgniter
  * @category
@@ -48,7 +48,7 @@
  * @link		https://github.com/sepehr/ci-base-controllers
  * @see			http://highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited
  */
-class MY_Autoloader {
+class CI_Autoloader {
 
 	private $_include_paths = array();
 
@@ -91,5 +91,5 @@ class MY_Autoloader {
 }
 // End of MY_Controller class
 
-/* End of file MY_Autoloader.php */
-/* Location: ./application/hooks/MY_Autoloader.php */
+/* End of file CI_Autoloader.php */
+/* Location: ./application/hooks/CI_Autoloader.php */
