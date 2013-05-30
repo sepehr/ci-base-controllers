@@ -15,15 +15,15 @@
  * - application/core/MY_Controller.php
  * - application/core/Public_Controller.php (a base controller - optional)
  * - application/core/Admin_Controller.php  (a base controller - optional)
- * - application/hooks/MY_Autoloader.php
+ * - application/hooks/CI_Autoloader.php
  *
  * 2. Hooks must be enabled in application config.php file.
  *
  * 3. A pre_system hook must already be registered in application hooks.php config file:
  * $hook['pre_system'] = array(
- *     'class'    => 'MY_Autoloader',
+ *     'class'    => 'CI_Autoloader',
  *	   'function' => 'register',
- *	   'filename' => 'MY_Autoloader.php',
+ *	   'filename' => 'CI_Autoloader.php',
  *	   'filepath' => 'hooks',
  *	   'params'   => array(APPPATH . 'base/')
  * );
