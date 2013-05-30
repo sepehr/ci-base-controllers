@@ -11,7 +11,7 @@
  * @link		https://github.com/sepehr/ci-base-controllers
  * @see			http://highermedia.com/articles/nuts_bolts/codeigniter_base_classes_revisited
  */
-abstract class Admin_Controller extends MY_Controller {
+abstract class Admin_Controller extends Base_Controller {
 
 	/**
 	 * Admin controller constructor.
@@ -20,6 +20,9 @@ abstract class Admin_Controller extends MY_Controller {
 	{
 		parent::__construct();
 	}
+
+	// ------------------------------------------------------------------------
+
 }
 // End of Admin_Controller class
 
