@@ -13,10 +13,10 @@
 /**
  * Enables autoloading of base controllers.
  */
-$hook['pre_system'] = array(
-	'class'    => 'MY_Autoloader',
+$hook['pre_system'][] = array(
+	'class'    => 'CI_Autoloader',
 	'function' => 'register',
-	'filename' => 'MY_Autoloader.php',
+	'filename' => 'CI_Autoloader.php',
 	'filepath' => 'hooks',
 	'params'   => array(APPPATH . 'base/')
 );
